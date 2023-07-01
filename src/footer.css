@@ -1,0 +1,23 @@
+footer {
+  @apply mt-[2.5rem] bg-[#09001d] text-[var(--cor--texto)];
+}
+
+footer h3 {
+  @apply font-semibold;
+}
+
+.main-footer {
+  @apply flex justify-between px-[1.3rem] py-10;
+}
+
+.contact-me {
+  @apply flex flex-col gap-5 items-center;
+}
+
+.icons-footer-style {
+  @apply flex gap-2;
+}
+
+.email-footer {
+  @apply flex flex-col gap-5 items-center;
+}

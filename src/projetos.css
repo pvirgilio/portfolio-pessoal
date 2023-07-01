@@ -1,0 +1,27 @@
+.projetos {
+  @apply text-[var(--cor--texto)] mt-[5rem];
+}
+
+.titulo-projetos {
+  @apply text-3xl font-semibold;
+}
+
+.container-cards {
+  @apply mt-[2rem] w-full flex flex-col items-center justify-center mx-auto gap-10;
+}
+
+.img-card {
+  @apply w-[100%] rounded-xl;
+}
+
+.card {
+  @apply flex flex-col gap-5 border-solid border-2 px-5 py-5 rounded-xl w-[100%] justify-center;
+}
+
+.titulo-card {
+  @apply text-2xl font-medium;
+}
+
+.texto-card {
+  @apply text-xl w-[100%]  text-gray-400 font-normal;
+}

@@ -1,0 +1,31 @@
+.section-sobremim {
+  @apply text-[var(--cor--texto)] mt-[5rem] px-[1.4rem];
+}
+
+.titulo-sobremim {
+  @apply text-3xl w-[90%] font-semibold;
+}
+
+.texto-sobremim {
+  @apply mt-[1rem] text-xl text-gray-400 leading-8;
+}
+
+.div-img-sobremim {
+  @apply border-solid border-2 border-sky-400 w-fit rounded-full ml-0 mt-[3rem] right-0  left-0;
+}
+
+.img-sobremim {
+  @apply w-[300px] rounded-full;
+}
+
+.foto-sobremim {
+  /* @apply mx-auto; */
+}
+
+.menu-button-cv {
+  @apply text-left mt-[3rem];
+}
+
+.link-curriculo {
+  @apply text-[var(--cor--texto)] bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] px-[1rem] py-[.5rem] rounded-full;
+}

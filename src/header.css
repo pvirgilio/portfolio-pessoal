@@ -1,0 +1,44 @@
+.header-style {
+  @apply flex flex-wrap items-center pt-[1rem] text-[var(--cor--texto)]
+
+  /* Responsivo */
+
+  h-menu:flex-nowrap h-menu:justify-between;
+}
+
+.logo-site {
+  @apply order-1 w-1/2
+  
+  /* Responsivo */
+  h-menu:w-fit;
+}
+
+.menu {
+  @apply flex items-center order-3 w-full mt-[2rem]
+  
+  /* Responsivo */
+  h-menu:w-fit h-menu:m-0;
+}
+
+.container-menu {
+  @apply flex w-full mx-auto items-center justify-between order-3
+  
+  /* Responsivo */
+  h-menu:justify-center h-menu:order-2 h-menu:w-fit h-menu:gap-5;
+}
+
+.nome-links-header {
+  @apply text-[0.9rem];
+}
+
+.icons-header-style {
+  @apply flex order-2 w-1/2 gap-5 justify-end
+  
+   
+  /* Responsivo */
+  h-menu:order-3 h-menu:w-fit;
+}
+
+.icons-social {
+  @apply text-[30px];
+}

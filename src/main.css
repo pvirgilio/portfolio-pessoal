@@ -1,0 +1,25 @@
+@import "./header.css";
+@import "./section-sobremim.css";
+@import "./projetos.css";
+@import "./about-more.css";
+@import "./skills.css";
+@import "./additional-skills.css";
+@import "./formation.css";
+@import "./footer.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --cor--texto: white;
+}
+
+.body-style {
+  @apply bg-[#0e0030] font-poppins;
+}
+
+main,
+header {
+  @apply px-[1.3rem];
+}

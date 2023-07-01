@@ -1,0 +1,23 @@
+.additional-skills {
+  @apply text-[var(--cor--texto)] mt-[3rem] font-semibold;
+}
+
+.titulo-additional-skills {
+  @apply text-3xl;
+}
+
+.container-additional-skills {
+  @apply flex flex-wrap mt-10 gap-5;
+}
+
+.skill-additional {
+  @apply flex items-center gap-2 mt-2;
+}
+
+.skill-additional span {
+  @apply text-xl;
+}
+
+.circle-additional {
+  @apply h-[10px] bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[10px] rounded-full;
+}

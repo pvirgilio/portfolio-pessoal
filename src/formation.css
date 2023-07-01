@@ -1,0 +1,27 @@
+.formation {
+  @apply text-white flex justify-center flex-col pt-20;
+}
+
+.circle-formation {
+  @apply absolute h-3 w-3 rounded-full bg-gradient-to-r from-[#ad6aff] to-[#47d0e6];
+}
+
+.titulo-information {
+  @apply text-left text-3xl mb-10 font-semibold;
+}
+
+.container-formation {
+  @apply relative flex py-10 gap-6 items-start justify-center m-0;
+}
+
+.container-text-container {
+  @apply flex flex-col-reverse text-sm gap-2 w-[100%];
+}
+
+.linha-formation {
+  @apply before:absolute before:left-[5.5px] before:h-full before:w-[1px] before:bg-gray-400;
+}
+
+.subtitulo-formation {
+  @apply text-[#47d0e6] font-semibold;
+}

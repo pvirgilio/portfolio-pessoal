@@ -1,0 +1,142 @@
+.skills {
+  @apply text-[var(--cor--texto)] mt-[3rem] py-[2rem];
+}
+
+.titulo-skills {
+  @apply text-3xl text-left font-semibold;
+}
+
+@keyframe animationSkill {
+  0% {
+  }
+  100% {
+  }
+}
+/*------- Skill Html -------*/
+
+.skill-html {
+  @apply mt-10 flex flex-col items-center justify-center;
+}
+
+.container-nome-html {
+  @apply flex justify-between w-[100%] items-center;
+}
+.icon-nome-html {
+  @apply flex items-center gap-2;
+}
+
+.container-level-html {
+  @apply h-3 bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[70%] rounded-full animate-pulse;
+}
+
+.level-html {
+  @apply bg-slate-800 rounded-full mt-2 w-[100%];
+}
+
+/*------- Skill Css -------*/
+
+.skill-css {
+  @apply mt-10 flex flex-col items-center justify-center;
+}
+
+.container-nome-css {
+  @apply flex justify-between w-[100%] items-center;
+}
+
+.icon-nome-css {
+  @apply flex items-center gap-2;
+}
+
+.container-level-css {
+  @apply h-3 bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[70%] rounded-full animate-pulse;
+}
+
+.level-css {
+  @apply bg-slate-800 rounded-full mt-2 w-[100%];
+}
+
+/*------- Tailwind Css ---------*/
+
+.skill-tailwind {
+  @apply mt-10 flex flex-col items-center justify-center;
+}
+
+.container-nome-tailwind {
+  @apply flex justify-between w-[100%] items-center;
+}
+
+.icon-nome-tailwind {
+  @apply flex items-center gap-1;
+}
+
+.container-level-tailwind {
+  @apply h-3 bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[40%] rounded-full animate-pulse;
+}
+
+.level-tailwind {
+  @apply bg-slate-800 rounded-full mt-2 w-[100%];
+}
+
+/* ---------- Skill Js --------- */
+.skill-js {
+  @apply mt-10 flex flex-col items-center justify-center;
+}
+
+.icon-nome-js {
+  @apply flex items-center gap-2;
+}
+
+.container-nome-js {
+  @apply flex justify-between w-[100%] items-center;
+}
+
+.container-level-js {
+  @apply h-3 bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[40%] rounded-full animate-pulse;
+}
+
+.level-js {
+  @apply bg-slate-800 rounded-full mt-2 w-[100%];
+}
+
+/* ---------- Skill Sql --------- */
+.skill-sql {
+  @apply mt-10 flex flex-col items-center justify-center;
+}
+
+.icon-nome-sql {
+  @apply flex items-center gap-2;
+}
+
+.container-nome-sql {
+  @apply flex justify-between w-[100%] items-center;
+}
+
+.container-level-sql {
+  @apply h-3 bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[20%] rounded-full animate-pulse;
+}
+
+.level-sql {
+  @apply bg-slate-800 rounded-full mt-2 w-[100%];
+}
+
+/* ---------- Skill laravel --------- */
+
+.skill-laravel {
+  @apply mt-10 flex flex-col items-center justify-center;
+}
+
+.icon-nome-laravel {
+  @apply flex items-center gap-2;
+}
+
+.container-nome-laravel {
+  @apply flex justify-between w-[100%] items-center;
+}
+
+.container-level-laravel {
+  @apply h-3 bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[20%] rounded-full animate-pulse;
+}
+
+.level-laravel {
+  @apply bg-slate-800 rounded-full mt-2 w-[100%];
+}

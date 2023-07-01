@@ -1,0 +1,11 @@
+.about-more {
+  @apply text-[var(--cor--texto)] mt-[5rem];
+}
+
+.titulo-about-more {
+  @apply text-3xl font-semibold;
+}
+
+.texto-about-more {
+  @apply mt-[2rem] text-xl text-gray-300 leading-8 font-normal;
+}
