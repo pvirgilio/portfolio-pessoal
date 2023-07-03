@@ -15,11 +15,19 @@
   --cor--texto: white;
 }
 
+html {
+  @apply scroll-smooth;
+}
+
 .body-style {
   @apply bg-[#0e0030] font-poppins;
 }
 
 main,
-header {
-  @apply px-[1.3rem];
+header,
+.main-footer {
+  @apply px-[1.3rem]
+  
+  /* Responsivo */
+  cel-g:px-[3rem] tablet-g:px-[5rem] desktop:px-[10rem];
 }

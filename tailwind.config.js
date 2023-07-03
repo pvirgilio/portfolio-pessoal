@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./index.html", "./src/**/*.{html,js}"],
+  content: ["./index.html", "./src/**/*{html,js}"],
   theme: {
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
@@ -8,17 +8,9 @@ module.exports = {
 
 
     extend: {
-      spacing: {
-        'time': 'calc(100% - 3rem)',
-      },
-
       screens: {
         'h-menu': '600px',
 
-        'cel-p': {
-          min: '320px',
-          max: '480px',
-        },
         'cel-g': {
           min: '481px',
           max: '767px',
@@ -28,10 +20,19 @@ module.exports = {
           min: "768px",
           max: "1024px",
         },
-        'desktop': "1280px",
+        'laptop': {
+          min: "1025px",
+          max: "1280px",
+        },
+        'desktop': "1281px",
 
 
       },
+
+
+      animation: {
+        menu: 'menu .3s all ease'
+      }
     },
   },
   plugins: [],

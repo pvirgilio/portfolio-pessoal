@@ -1,44 +1,56 @@
 .header-style {
-  @apply flex flex-wrap items-center pt-[1rem] text-[var(--cor--texto)]
-
-  /* Responsivo */
-
-  h-menu:flex-nowrap h-menu:justify-between;
+  @apply flex py-[1.5rem] text-[var(--cor--texto)]  justify-between
+  bg-[#09001d]
+  /* Responsivo */;
 }
 
 .logo-site {
-  @apply order-1 w-1/2
-  
-  /* Responsivo */
-  h-menu:w-fit;
+  @apply w-fit whitespace-nowrap;
 }
 
 .menu {
-  @apply flex items-center order-3 w-full mt-[2rem]
-  
-  /* Responsivo */
-  h-menu:w-fit h-menu:m-0;
+  @apply flex  w-[100%] items-center justify-end;
+}
+
+.fa-bars,
+.fa-xmark {
+  @apply transition-transform duration-300 ease-in-out;
+}
+
+.fa-xmark {
+  @apply rotate-90;
+}
+
+.fa-bars {
+}
+
+.button-menu {
+  @apply flex w-fit relative cursor-pointer;
+}
+btnAbrir {
+  @apply text-[20px];
 }
 
 .container-menu {
-  @apply flex w-full mx-auto items-center justify-between order-3
-  
-  /* Responsivo */
-  h-menu:justify-center h-menu:order-2 h-menu:w-fit h-menu:gap-5;
+  @apply flex-col  absolute text-right top-[65px]  right-0 bg-[#09001d] w-[100%] gap-2  flex h-0 overflow-hidden;
+}
+
+.menu-aberto {
+  @apply flex-col  absolute text-right top-[65px] right-0 bg-[#09001d] w-[100%] gap-2  flex h-fit overflow-visible animate-menu;
 }
 
 .nome-links-header {
-  @apply text-[0.9rem];
+  @apply text-[0.9rem] px-[1.3rem];
+}
+
+#ctnMenu li {
+  @apply py-[.5rem] border-b border-[#170047] w-[100%];
 }
 
 .icons-header-style {
-  @apply flex order-2 w-1/2 gap-5 justify-end
-  
-   
-  /* Responsivo */
-  h-menu:order-3 h-menu:w-fit;
+  @apply flex w-full border-b border-[#170047] gap-5 justify-end py-[.5rem] px-[1.3rem] items-center;
 }
 
 .icons-social {
-  @apply text-[30px];
+  @apply text-[30px] items-center;
 }

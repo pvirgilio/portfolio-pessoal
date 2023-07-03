@@ -1,5 +1,5 @@
 .projetos {
-  @apply text-[var(--cor--texto)] mt-[5rem];
+  @apply text-[var(--cor--texto)] mt-[8rem];
 }
 
 .titulo-projetos {
@@ -7,7 +7,10 @@
 }
 
 .container-cards {
-  @apply mt-[2rem] w-full flex flex-col items-center justify-center mx-auto gap-10;
+  @apply mt-[2rem] w-full flex flex-col items-center justify-center mx-auto gap-10
+
+  /* Responsive */
+  cel-g:px-[30px] tablet-g:px-[60px];
 }
 
 .img-card {
