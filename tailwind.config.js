@@ -29,11 +29,19 @@ module.exports = {
 
       },
 
+      keyframes: {
+        'menufechado': {
+          '0%': {
+            opacity: 1, height: ' 100px'
+          },
+          '100%': { opacity: 0, height: 0 },
+        },
+      },
+      Animation: {
+        menufechado: 'menufechado 0.3s ease-out'
 
-      animation: {
-        menu: 'menu .3s all ease'
-      }
-    },
+      },
+    }
   },
   plugins: [],
 };

@@ -1,5 +1,5 @@
 .section-sobremim {
-  @apply text-[var(--cor--texto)] mt-[5rem] px-[1.4rem]
+  @apply text-[var(--cor--texto)] mt-[3rem] px-[1.4rem]
   
   /* Responsivo */;
 }
@@ -25,12 +25,12 @@
 }
 
 .titulo-sobremim {
-  @apply text-3xl w-[90%] font-semibold leading-[50px];
+  @apply text-3xl w-[100%] font-semibold leading-[50px];
 }
 
 .texto-sobremim {
-  @apply mt-[1rem] text-xl text-gray-400 leading-8
-  
+  @apply mt-[1rem] text-[15px] text-gray-400 leading-8
+  font-medium 
   
   desktop:w-[500px];
 }

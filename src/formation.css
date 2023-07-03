@@ -7,7 +7,7 @@
 }
 
 .titulo-information {
-  @apply text-left text-3xl mb-10 font-semibold;
+  @apply text-left text-2xl mb-10 font-semibold;
 }
 
 .container-formation {
@@ -23,13 +23,13 @@
 }
 
 .subtitulo-formation {
-  @apply text-[#47d0e6] font-semibold text-[18px];
+  @apply text-[#47d0e6] font-semibold text-[15px];
 }
 
 .nome-mes-formation {
-  @apply bg-[#47d0e6] text-black w-fit px-[1rem] py-[.5rem] rounded-full font-bold text-[16px];
+  @apply bg-[#47d0e6] text-black w-fit px-[1rem] py-[.5rem] rounded-full font-semibold text-[15px];
 }
 
 .info-formation {
-  @apply text-[18px] leading-[30px];
+  @apply text-[15px] leading-[30px];
 }

@@ -35,16 +35,37 @@ btnAbrir {
   @apply flex-col  absolute text-right top-[65px]  right-0 bg-[#09001d] w-[100%] gap-2  flex h-0 overflow-hidden;
 }
 
+@keyframes menuAberto {
+  0% {
+    opacity: 0;
+    height: 0;
+  }
+
+  50% {
+    opacity: 1;
+    height: 50px;
+  }
+
+  100% {
+    opacity: 1;
+    height: 100px;
+  }
+}
+
 .menu-aberto {
-  @apply flex-col  absolute text-right top-[65px] right-0 bg-[#09001d] w-[100%] gap-2  flex h-fit overflow-visible animate-menu;
+  animation: menuAberto 0.3s ease-in;
+}
+
+.menu-aberto {
+  @apply flex-col  absolute text-right top-[65px] right-0 bg-[#09001d] w-[100%] gap-2  flex h-fit overflow-hidden;
 }
 
 .nome-links-header {
-  @apply text-[0.9rem] px-[1.3rem];
+  @apply text-[1rem] px-[1.3rem] font-light;
 }
 
 #ctnMenu li {
-  @apply py-[.5rem] border-b border-[#170047] w-[100%];
+  @apply py-[1rem] border-b border-[#170047] w-[100%];
 }
 
 .icons-header-style {
@@ -52,5 +73,5 @@ btnAbrir {
 }
 
 .icons-social {
-  @apply text-[30px] items-center;
+  @apply text-[30px] items-center cursor-pointer;
 }

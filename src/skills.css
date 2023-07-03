@@ -3,16 +3,18 @@
 }
 
 .titulo-skills {
-  @apply text-3xl text-left font-semibold;
+  @apply text-2xl text-left font-semibold;
 }
 
-@keyframe animationSkill {
+/*------- Skill Html -------*/
+@keyframes expandir {
   0% {
+    width: 0;
   }
   100% {
+    width: 80%;
   }
 }
-/*------- Skill Html -------*/
 
 .skill-html {
   @apply mt-10 flex flex-col items-center justify-center;
@@ -21,12 +23,17 @@
 .container-nome-html {
   @apply flex justify-between w-[100%] items-center;
 }
+
+.container-level-html {
+  animation: expandir 0.5s ease-in-out;
+}
+
 .icon-nome-html {
   @apply flex items-center gap-2;
 }
 
 .container-level-html {
-  @apply h-3 bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[70%] rounded-full animate-pulse;
+  @apply h-3 bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] w-[70%] rounded-full;
 }
 
 .level-html {
@@ -139,4 +146,8 @@
 
 .level-laravel {
   @apply bg-slate-800 rounded-full mt-2 w-[100%];
+}
+
+.span-skill {
+  @apply text-[13px] font-light;
 }

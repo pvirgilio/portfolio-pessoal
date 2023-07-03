@@ -3,7 +3,7 @@
 }
 
 .titulo-additional-skills {
-  @apply text-3xl;
+  @apply text-2xl;
 }
 
 .container-additional-skills {
@@ -15,7 +15,7 @@
 }
 
 .skill-additional span {
-  @apply text-xl;
+  @apply text-[15px] font-light;
 }
 
 .circle-additional {
