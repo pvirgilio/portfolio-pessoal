@@ -1,7 +1,9 @@
 .header-style {
   @apply flex py-[1.5rem] text-[var(--cor--texto)]  justify-between
-  bg-[#09001d]
-  /* Responsivo */;
+  bg-[#09001d] px-[var(--px--mobile)]
+  /* Responsivo */
+  
+  desktop:px-[var(--px--desktop)];
 }
 
 .logo-site {
@@ -14,7 +16,7 @@
 
 .fa-bars,
 .fa-xmark {
-  @apply transition-transform duration-300 ease-in-out;
+  @apply transition-transform duration-300 ease-in-out text-[25px];
 }
 
 .fa-xmark {
@@ -25,10 +27,7 @@
 }
 
 .button-menu {
-  @apply flex w-fit relative cursor-pointer;
-}
-btnAbrir {
-  @apply text-[20px];
+  @apply flex w-fit  cursor-pointer;
 }
 
 .container-menu {
@@ -57,7 +56,7 @@ btnAbrir {
 }
 
 .menu-aberto {
-  @apply flex-col  absolute text-right top-[65px] right-0 bg-[#09001d] w-[100%] gap-2  flex h-fit overflow-hidden;
+  @apply flex-col  absolute text-right top-[65px] right-0 bg-[#09001d] w-[100%] gap-2  flex h-fit overflow-hidden z-[999];
 }
 
 .nome-links-header {
@@ -69,7 +68,7 @@ btnAbrir {
 }
 
 .icons-header-style {
-  @apply flex w-full border-b border-[#170047] gap-5 justify-end py-[.5rem] px-[1.3rem] items-center;
+  @apply flex w-full border-b border-[#170047] gap-5 justify-end py-[1rem] px-[1.3rem] items-end;
 }
 
 .icons-social {

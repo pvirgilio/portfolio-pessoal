@@ -1,10 +1,10 @@
 .about-more {
-  @apply text-[var(--cor--texto)] mt-[10rem] text-center mx-auto
+  @apply text-[var(--cor--texto)] mt-[5rem] text-center mx-auto
   
   
   tablet-g:w-[80%] tablet-g:text-center tablet-g:mx-auto
   
-  
+  px-[var(--px--mobile)]
    /* Desktop */
   desktop:mt-[10rem] desktop:flex desktop:items-center desktop:justify-center;
 }
@@ -15,9 +15,7 @@
 }
 
 .container-texto-about {
-  @apply mt-10
-  
-  desktop:w-[50%];
+  @apply desktop:w-[50%];
 }
 
 .titulo-about-more {
@@ -25,7 +23,7 @@
 }
 
 .texto-about-more {
-  @apply mt-[2rem] font-light text-[15px] text-gray-300 leading-9
+  @apply mt-[2rem] font-normal text-[15px] text-gray-300 leading-9
   
   
   

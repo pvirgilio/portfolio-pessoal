@@ -1,5 +1,5 @@
 .skills {
-  @apply text-[var(--cor--texto)] mt-[3rem] py-[2rem];
+  @apply text-[var(--cor--texto)] mt-[3rem] py-[2rem] px-[var(--px--mobile)];
 }
 
 .titulo-skills {

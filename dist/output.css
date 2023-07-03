@@ -5,7 +5,16 @@
   background-color: rgb(9 0 29 / var(--tw-bg-opacity));
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  padding-left: var(--px--mobile);
+  padding-right: var(--px--mobile);
   color: var(--cor--texto);
+}
+
+@media (min-width: 1281px) {
+  .header-style {
+    padding-left: var(--px--desktop);
+    padding-right: var(--px--desktop);
+  }
 }
 
 .logo-site {
@@ -23,6 +32,7 @@
 
 .fa-bars,
 .fa-xmark {
+  font-size: 25px;
   transition-property: transform;
   transition-duration: 300ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -37,15 +47,10 @@
 }
 
 .button-menu {
-  position: relative;
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
   cursor: pointer;
-}
-
-btnAbrir {
-  font-size: 20px;
 }
 
 .container-menu {
@@ -85,6 +90,7 @@ btnAbrir {
   position: absolute;
   top: 65px;
   right: 0px;
+  z-index: 999;
   display: flex;
   height: -moz-fit-content;
   height: fit-content;
@@ -116,14 +122,14 @@ btnAbrir {
 .icons-header-style {
   display: flex;
   width: 100%;
-  align-items: center;
+  align-items: flex-end;
   justify-content: flex-end;
   gap: 1.25rem;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(23 0 71 / var(--tw-border-opacity));
-  padding-top: .5rem;
-  padding-bottom: .5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   padding-left: 1.3rem;
   padding-right: 1.3rem;
 }
@@ -135,10 +141,38 @@ btnAbrir {
 }
 
 .section-sobremim {
-  margin-top: 3rem;
-  padding-left: 1.4rem;
-  padding-right: 1.4rem;
   color: var(--cor--texto);
+}
+
+.container-section-sobremim {
+  position: absolute;
+  top: 150px;
+  padding-left: var(--px--mobile);
+  padding-right: var(--px--mobile);
+}
+
+@media (min-width: 1281px) {
+  .container-section-sobremim {
+    padding-left: var(--px--desktop);
+    padding-right: var(--px--desktop);
+  }
+}
+
+.background {
+  background-image: url("/img/backgroundprogramming.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 1000px;
+  position: relative;
+  --tw-blur: blur(5px);
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .background {
+    height: 900px;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -154,6 +188,8 @@ btnAbrir {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: var(--px--desktop);
+    padding-right: var(--px--desktop);
   }
 }
 
@@ -177,6 +213,19 @@ btnAbrir {
   line-height: 50px;
 }
 
+.span-section-sobremim {
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #ad6aff var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(173 106 255 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #47d0e6 var(--tw-gradient-to-position);
+  -webkit-background-clip: text;
+          background-clip: text;
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+  color: transparent;
+}
+
 .texto-sobremim {
   margin-top: 1rem;
   font-size: 15px;
@@ -189,6 +238,7 @@ btnAbrir {
 @media (min-width: 1281px) {
   .texto-sobremim {
     width: 500px;
+    font-size: 17px;
   }
 }
 
@@ -221,6 +271,8 @@ btnAbrir {
 
 .menu-button-cv {
   margin-top: 3rem;
+  width: -moz-fit-content;
+  width: fit-content;
   white-space: nowrap;
   text-align: left;
 }
@@ -228,6 +280,7 @@ btnAbrir {
 @media (min-width: 1281px) {
   .menu-button-cv {
     margin-top: 0px;
+    padding-left: 10rem;
   }
 }
 
@@ -246,24 +299,32 @@ btnAbrir {
 }
 
 .projetos {
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: var(--px--mobile);
+  padding-right: var(--px--mobile);
   color: var(--cor--texto);
 }
 
 .titulo-projetos {
+  border-bottom-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(71 208 230 / var(--tw-border-opacity));
   font-size: 1.5rem;
   line-height: 2rem;
   font-weight: 600;
 }
 
 .container-cards {
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 2rem;
+  margin-top: 4rem;
   display: flex;
   width: 100%;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
   gap: 2.5rem;
 }
@@ -283,20 +344,20 @@ btnAbrir {
 }
 
 .img-card {
-  width: 100%;
-  border-radius: 0.75rem;
-}
-
-.card {
-  display: flex;
-  width: 100%;
-  flex-direction: column;
-  justify-content: center;
-  gap: 1.25rem;
+  height: 50%;
+  width: 300px;
+  border-radius: 1.5rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+}
+
+.card {
+  display: flex;
+  height: 450px;
+  width: 300px;
+  flex-direction: column;
   border-width: 2px;
   border-style: solid;
   -o-border-image: linear-gradient(to right, #ad6aff, #47d0e6) 1;
@@ -306,6 +367,17 @@ btnAbrir {
 .titulo-card {
   font-weight: 500;
   color: 18;
+}
+
+.container-texto-projetos {
+  margin-bottom: 1.25rem;
+  display: flex;
+  height: 50%;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  padding-top: 0.75rem;
 }
 
 .texto-card {
@@ -379,7 +451,9 @@ a.link-site:hover {
 .about-more {
   margin-left: auto;
   margin-right: auto;
-  margin-top: 10rem;
+  margin-top: 5rem;
+  padding-left: var(--px--mobile);
+  padding-right: var(--px--mobile);
   text-align: center;
   color: var(--cor--texto);
 }
@@ -404,13 +478,7 @@ a.link-site:hover {
   .svg-aboutmore {
     width: 50%;
   }
-}
 
-.container-texto-about {
-  margin-top: 2.5rem;
-}
-
-@media (min-width: 1281px) {
   .container-texto-about {
     width: 50%;
   }
@@ -425,7 +493,7 @@ a.link-site:hover {
 .texto-about-more {
   margin-top: 2rem;
   font-size: 15px;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 2.25rem;
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -449,6 +517,8 @@ a.link-site:hover {
   margin-top: 3rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  padding-left: var(--px--mobile);
+  padding-right: var(--px--mobile);
   color: var(--cor--texto);
 }
 
@@ -782,6 +852,8 @@ a.link-site:hover {
 
 .additional-skills {
   margin-top: 3rem;
+  padding-left: var(--px--mobile);
+  padding-right: var(--px--mobile);
   font-weight: 600;
   color: var(--cor--texto);
 }
@@ -825,6 +897,8 @@ a.link-site:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding-left: var(--px--mobile);
+  padding-right: var(--px--mobile);
   padding-top: 5rem;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -924,6 +998,8 @@ footer h3 {
   justify-content: space-between;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
+  padding-left: var(--px--mobile);
+  padding-right: var(--px--mobile);
 }
 
 .contact-me {
@@ -1541,35 +1617,17 @@ video {
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
-.bg-gradient-to-r {
-  background-image: linear-gradient(to right, var(--tw-gradient-stops));
-}
-
-.from-\[\#ad6aff\] {
-  --tw-gradient-from: #ad6aff var(--tw-gradient-from-position);
-  --tw-gradient-to: rgb(173 106 255 / 0) var(--tw-gradient-to-position);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
-.to-\[\#47d0e6\] {
-  --tw-gradient-to: #47d0e6 var(--tw-gradient-to-position);
-}
-
-.bg-clip-text {
-  -webkit-background-clip: text;
-          background-clip: text;
-}
-
 .text-\[12px\] {
   font-size: 12px;
 }
 
-.font-bold {
-  font-weight: 700;
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
 }
 
-.text-transparent {
-  color: transparent;
+.font-semibold {
+  font-weight: 600;
 }
 
 .opacity-75 {
@@ -1578,6 +1636,8 @@ video {
 
 :root {
   --cor--texto: white;
+  --px--desktop: 10rem;
+  --px--mobile: 1.3rem;
 }
 
 html {
@@ -1590,36 +1650,11 @@ html {
   font-family: Poppins, sans-serif;
 }
 
-main,
+/* main,
 header,
 .main-footer {
-  padding-left: 1.3rem;
-  padding-right: 1.3rem;
-}
-
-@media (min-width: 481px) and (max-width: 767px) {
-  main,
-header,
-.main-footer {
-    padding-left: 3rem;
-    padding-right: 3rem;
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  main,
-header,
-.main-footer {
-    padding-left: 5rem;
-    padding-right: 5rem;
-  }
-}
-
-@media (min-width: 1281px) {
-  main,
-header,
-.main-footer {
-    padding-left: 10rem;
-    padding-right: 10rem;
-  }
-}
+  @apply px-[1.3rem]
+  
+  
+  cel-g:px-[3rem] tablet-g:px-[5rem];
+} */

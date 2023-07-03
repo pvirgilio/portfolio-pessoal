@@ -1,5 +1,5 @@
 .additional-skills {
-  @apply text-[var(--cor--texto)] mt-[3rem] font-semibold;
+  @apply text-[var(--cor--texto)] mt-[3rem] font-semibold px-[var(--px--mobile)];
 }
 
 .titulo-additional-skills {

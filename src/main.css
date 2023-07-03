@@ -13,6 +13,8 @@
 
 :root {
   --cor--texto: white;
+  --px--desktop: 10rem;
+  --px--mobile: 1.3rem;
 }
 
 html {
@@ -23,11 +25,11 @@ html {
   @apply bg-[#0e0030] font-poppins;
 }
 
-main,
+/* main,
 header,
 .main-footer {
   @apply px-[1.3rem]
   
-  /* Responsivo */
-  cel-g:px-[3rem] tablet-g:px-[5rem] desktop:px-[10rem];
-}
+  
+  cel-g:px-[3rem] tablet-g:px-[5rem];
+} */

@@ -1,5 +1,5 @@
 .formation {
-  @apply text-white flex justify-center flex-col pt-20;
+  @apply text-white flex justify-center flex-col pt-20 px-[var(--px--mobile)];
 }
 
 .circle-formation {

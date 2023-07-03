@@ -7,7 +7,7 @@ footer h3 {
 }
 
 .main-footer {
-  @apply flex justify-between py-10;
+  @apply flex justify-between py-10 px-[var(--px--mobile)];
 }
 
 .contact-me {
