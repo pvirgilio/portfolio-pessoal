@@ -2,20 +2,48 @@
   @apply text-[var(--cor--texto)] mt-[5rem] text-center mx-auto
   
   
-  tablet-g:w-[80%] tablet-g:text-center tablet-g:mx-auto
   
   px-[var(--px--mobile)]
+  
+  
    /* Desktop */
-  desktop:mt-[10rem] desktop:flex desktop:items-center desktop:justify-center;
+  desktop:mt-[5rem] desktop:flex flex-row-reverse desktop:items-center desktop:justify-center desktop:px-[var(--px--desktop)]
+  
+  /* Laptop */
+  laptop:mt-[5rem] laptop:flex laptop:flex-row-reverse laptop:items-center laptop:justify-center
+  laptop:px-[var(--px--laptop)]
+  
+  
+  /* Tablet */
+
+  tablet-g:mt-[5rem] tablet-g:flex tablet-g:flex-row-reverse tablet-g:items-center tablet-g:justify-center
+  tablet-g:px-[var(--px--tablet)];
 }
 
 .svg-aboutmore {
   @apply /* Desktop */
-  desktop:w-[50%];
+  desktop:w-[50%]
+  
+  desktop:scale-x-[-1]
+  
+  /* Laptop */
+  laptop:w-[50%]
+  
+  laptop:scale-x-[-1]
+  
+  
+  tablet-g:w-[50%]
+  
+  tablet-g:scale-x-[-1];
 }
 
 .container-texto-about {
-  @apply desktop:w-[50%];
+  @apply desktop:w-[50%]
+  
+  /* laptop: */
+  laptop:w-[50%]
+  
+  tablet-g:w-[50%];
 }
 
 .titulo-about-more {
@@ -23,12 +51,15 @@
 }
 
 .texto-about-more {
-  @apply mt-[2rem] font-normal text-[15px] text-gray-300 leading-9
+  @apply mt-[2rem] font-normal text-left text-[18px] text-gray-300 leading-9
   
   
   
   /* Desktop */
-  desktop:w-[100%] desktop:mx-auto desktop:leading-10;
+  desktop:w-[100%] desktop:mx-auto desktop:leading-10
+  
+  /* Laptop */
+  laptop:w-[100%] laptop:mx-auto laptop:leading-10;
 }
 
 .nome-empresa-formation {

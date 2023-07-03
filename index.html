@@ -24,10 +24,10 @@
       </div>
 
       <nav class="menu">
-        <div class="button-menu">
+        <div class="button-menu justify-between">
           <i id="btnAbrir" class="fa-solid fa-bars"></i>
         </div>
-        <ul id="ctnMenu" class="container-menu">
+        <ul id="menu" class="container-menu">
           <li><a class="nome-links-header" href="./index.html">Home</a></li>
           <li><a class="nome-links-header" href="#projetos">Projetos</a></li>
           <li><a class="nome-links-header" href="#about-more">Sobre mim</a></li>
@@ -105,9 +105,23 @@
             <div class="container-texto-projetos">
               <h2 class="titulo-card">Savant Web</h2>
               <p class="texto-card">
-                Site desenvolvimento para minha empresa que está em
+                Site desenvolvido para minha empresa que está em
                 desenvolvimento. Feito com Html, Css, design responsivo e um
                 pouco de JS.
+              </p>
+              <div class="links-projetos">
+                <a class="link-site" href="">View site</a>
+                <a class="link-github" href="">View github</a>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <img class="img-card" src="./img/laravel.jpg" alt="" />
+            <div class="container-texto-projetos">
+              <h2 class="titulo-card">Crud Laravel</h2>
+              <p class="texto-card">
+                Crud simples feito utilizando Php Laravel, Html, Css, Sql,
+                JavaScript.
               </p>
               <div class="links-projetos">
                 <a class="link-site" href="">View site</a>
@@ -190,147 +204,153 @@
 
       <section class="skills">
         <h1 class="titulo-skills">Skills</h1>
-        <div class="skill-html">
-          <div class="container-nome-html">
-            <div class="icon-nome-html">
-              <i class="fa-brands fa-html5"></i>
-              <span class="nome-html">Html</span>
+        <div class="container-skill-and-add">
+          <div class="container-skills">
+            <div class="skill-html">
+              <div class="container-nome-html">
+                <div class="icon-nome-html">
+                  <i class="fa-brands fa-html5"></i>
+                  <span class="nome-html">Html</span>
+                </div>
+                <span class="span-skill">Intermediário</span>
+              </div>
+              <div class="level-html">
+                <div class="container-level-html"></div>
+              </div>
             </div>
-            <span class="span-skill">Intermediário</span>
-          </div>
-          <div class="level-html">
-            <div class="container-level-html"></div>
-          </div>
-        </div>
 
-        <div class="skill-css">
-          <div class="container-nome-css">
-            <div class="icon-nome-css">
-              <i class="fa-brands fa-css3-alt"></i>
-              <span>Css</span>
+            <div class="skill-css">
+              <div class="container-nome-css">
+                <div class="icon-nome-css">
+                  <i class="fa-brands fa-css3-alt"></i>
+                  <span>Css</span>
+                </div>
+                <span class="span-skill">Intermediário</span>
+              </div>
+              <div class="level-css">
+                <div class="container-level-css"></div>
+              </div>
             </div>
-            <span class="span-skill">Intermediário</span>
-          </div>
-          <div class="level-css">
-            <div class="container-level-css"></div>
-          </div>
-        </div>
 
-        <div class="skill-tailwind">
-          <div class="container-nome-tailwind">
-            <div class="icon-nome-tailwind">
-              <img src="./svg/tailwind.svg" alt="" />
-              <span>Tailwind Css</span>
+            <div class="skill-tailwind">
+              <div class="container-nome-tailwind">
+                <div class="icon-nome-tailwind">
+                  <img src="./svg/tailwind.svg" alt="" />
+                  <span>Tailwind Css</span>
+                </div>
+                <span class="span-skill">Iniciante</span>
+              </div>
+              <div class="level-tailwind">
+                <div class="container-level-tailwind"></div>
+              </div>
             </div>
-            <span class="span-skill">Iniciante</span>
-          </div>
-          <div class="level-tailwind">
-            <div class="container-level-tailwind"></div>
-          </div>
-        </div>
 
-        <div class="skill-js">
-          <div class="container-nome-js">
-            <div class="icon-nome-js">
-              <i class="fa-brands fa-js"></i>
-              <span>JavaScript</span>
+            <div class="skill-js">
+              <div class="container-nome-js">
+                <div class="icon-nome-js">
+                  <i class="fa-brands fa-js"></i>
+                  <span>JavaScript</span>
+                </div>
+                <span class="span-skill">Iniciante</span>
+              </div>
+              <div class="level-js">
+                <div class="container-level-js"></div>
+              </div>
             </div>
-            <span class="span-skill">Iniciante</span>
-          </div>
-          <div class="level-js">
-            <div class="container-level-js"></div>
-          </div>
-        </div>
 
-        <div class="skill-sql">
-          <div class="container-nome-sql">
-            <div class="icon-nome-sql">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-sql"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#ffffff"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2z"
-                />
-                <path d="M17 8v8h4" />
-                <path d="M13 15l1 1" />
-                <path
-                  d="M3 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1"
-                />
-              </svg>
-              <span>Sql Server</span>
+            <div class="skill-sql">
+              <div class="container-nome-sql">
+                <div class="icon-nome-sql">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-sql"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2z"
+                    />
+                    <path d="M17 8v8h4" />
+                    <path d="M13 15l1 1" />
+                    <path
+                      d="M3 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1"
+                    />
+                  </svg>
+                  <span>Sql Server</span>
+                </div>
+                <span class="span-skill">Iniciante</span>
+              </div>
+              <div class="level-sql">
+                <div class="container-level-sql"></div>
+              </div>
             </div>
-            <span class="span-skill">Iniciante</span>
-          </div>
-          <div class="level-sql">
-            <div class="container-level-sql"></div>
-          </div>
-        </div>
 
-        <div class="skill-laravel">
-          <div class="container-nome-laravel">
-            <div class="icon-nome-laravel">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="icon icon-tabler icon-tabler-brand-laravel"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="#ffffff"
-                fill="none"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                  d="M3 17l8 5l7 -4v-8l-4 -2.5l4 -2.5l4 2.5v4l-11 6.5l-4 -2.5v-7.5l-4 -2.5z"
-                />
-                <path d="M11 18v4" />
-                <path d="M7 15.5l7 -4" />
-                <path d="M14 7.5v4" />
-                <path d="M14 11.5l4 2.5" />
-                <path d="M11 13v-7.5l-4 -2.5l-4 2.5" />
-                <path d="M7 8l4 -2.5" />
-                <path d="M18 10l4 -2.5" />
-              </svg>
-              <span>Laravel</span>
+            <div class="skill-laravel">
+              <div class="container-nome-laravel">
+                <div class="icon-nome-laravel">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="icon icon-tabler icon-tabler-brand-laravel"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="#ffffff"
+                    fill="none"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <path
+                      d="M3 17l8 5l7 -4v-8l-4 -2.5l4 -2.5l4 2.5v4l-11 6.5l-4 -2.5v-7.5l-4 -2.5z"
+                    />
+                    <path d="M11 18v4" />
+                    <path d="M7 15.5l7 -4" />
+                    <path d="M14 7.5v4" />
+                    <path d="M14 11.5l4 2.5" />
+                    <path d="M11 13v-7.5l-4 -2.5l-4 2.5" />
+                    <path d="M7 8l4 -2.5" />
+                    <path d="M18 10l4 -2.5" />
+                  </svg>
+                  <span>Laravel</span>
+                </div>
+                <span class="span-skill">Iniciante</span>
+              </div>
+              <div class="level-laravel">
+                <div class="container-level-laravel"></div>
+              </div>
             </div>
-            <span class="span-skill">Iniciante</span>
           </div>
-          <div class="level-laravel">
-            <div class="container-level-laravel"></div>
-          </div>
-        </div>
-      </section>
 
-      <section class="additional-skills">
-        <h1 class="titulo-additional-skills">Tecnologia e skills adicionais</h1>
-        <div class="container-additional-skills">
-          <div class="skill-additional">
-            <div class="circle-additional"></div>
-            <span class="span">Fácil Aprendizagem</span>
-          </div>
-          <div class="skill-additional">
-            <div class="circle-additional"></div>
-            <span>Git</span>
-          </div>
-          <div class="skill-additional">
-            <div class="circle-additional"></div>
-            <span>Trabalho em equipe</span>
-          </div>
-          <div class="skill-additional">
-            <div class="circle-additional"></div>
-            <span>Responsável</span>
+          <div class="additional-skills">
+            <h1 class="titulo-additional-skills">
+              Tecnologia e skills adicionais
+            </h1>
+            <div class="container-additional-skills">
+              <div class="skill-additional">
+                <div class="circle-additional"></div>
+                <span class="span">Fácil Aprendizagem</span>
+              </div>
+              <div class="skill-additional">
+                <div class="circle-additional"></div>
+                <span>Git</span>
+              </div>
+              <div class="skill-additional">
+                <div class="circle-additional"></div>
+                <span>Trabalho em equipe</span>
+              </div>
+              <div class="skill-additional">
+                <div class="circle-additional"></div>
+                <span>Responsável</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -426,16 +446,26 @@
     <footer>
       <div class="main-footer">
         <div class="contact-me">
-          <h3>Contact Me</h3>
           <div class="icons-footer-style">
-            <i class="fa-brands fa-square-instagram icons-social"></i>
-            <i class="fa-brands fa-linkedin icons-social"></i>
-            <i class="fa-brands fa-square-github icons-social"></i>
+            <h3>Contact Me</h3>
+            <div class="flex gap-5 mt-10">
+              <i class="fa-brands fa-square-instagram icons-social"></i>
+              <i class="fa-brands fa-linkedin icons-social"></i>
+              <i class="fa-brands fa-square-github icons-social"></i>
+            </div>
+          </div>
+
+          <div class="email-footer">
+            <h3>Email</h3>
+            <a class="text-[12px] mt-10">pedrovirgilio@outlook.com.br</a>
           </div>
         </div>
-        <div class="email-footer">
-          <h3>Email</h3>
-          <a class="text-[12px]">pedrovirgilio@outlook.com</a>
+
+        <div class="copyright">
+          <p>
+            &copy;Copyright All directs Reserved |
+            <span class="font-bold">Pedro Virgilio 2023</span>
+          </p>
         </div>
       </div>
     </footer>

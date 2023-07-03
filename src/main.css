@@ -13,8 +13,10 @@
 
 :root {
   --cor--texto: white;
-  --px--desktop: 10rem;
+  --px--desktop: 8rem;
   --px--mobile: 1.3rem;
+  --px--tablet: 1.3rem;
+  --px--laptop: 5rem;
 }
 
 html {

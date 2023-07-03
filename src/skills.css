@@ -1,9 +1,41 @@
 .skills {
-  @apply text-[var(--cor--texto)] mt-[3rem] py-[2rem] px-[var(--px--mobile)];
+  @apply text-[var(--cor--texto)]  py-[2rem] px-[var(--px--mobile)]
+  
+  /* Desktop */
+  desktop:px-[var(--px--desktop)] desktop:mt-[5rem]
+  desktop:flex desktop:flex-col desktop:w-[100%]
+
+  /* Laptop */
+  laptop:mt-[5rem] laptop:justify-between
+  laptop:flex laptop:flex-col laptop:w-[100%] laptop:px-[var(--px--laptop)]
+  
+  
+  /* Tablet-g */
+  tablet-g:mt-[5rem] tablet-g:justify-between
+tablet-g:flex tablet-g:flex-col tablet-g:w-[100%] tablet-g:px-[var(--px--laptop)];
+}
+
+.container-skill-and-add {
+  @apply desktop:flex desktop:items-start desktop:mt-[5rem]
+
+
+  laptop:flex laptop:items-start laptop:mt-[5rem];
 }
 
 .titulo-skills {
-  @apply text-2xl text-left font-semibold;
+  @apply text-2xl text-center font-semibold w-full h-fit
+  
+  
+  desktop:text-center  desktop:w-fit desktop:mx-auto;
+}
+
+.container-skills {
+  @apply w-[100%]
+  
+  desktop:h-fit desktop:flex-col desktop:flex desktop:w-[50%]
+
+
+  laptop:h-fit laptop:flex-col laptop:flex laptop:w-[50%];
 }
 
 /*------- Skill Html -------*/
@@ -17,7 +49,7 @@
 }
 
 .skill-html {
-  @apply mt-10 flex flex-col items-center justify-center;
+  @apply flex flex-col items-center justify-center;
 }
 
 .container-nome-html {

@@ -1,5 +1,11 @@
 .formation {
-  @apply text-white flex justify-center flex-col pt-20 px-[var(--px--mobile)];
+  @apply text-white flex justify-center flex-col pt-20 px-[var(--px--mobile)]
+  
+  
+  desktop:px-[var(--px--desktop)]
+  
+  
+  laptop:px-[var(--px--laptop)];
 }
 
 .circle-formation {

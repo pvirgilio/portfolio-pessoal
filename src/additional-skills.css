@@ -1,13 +1,23 @@
 .additional-skills {
-  @apply text-[var(--cor--texto)] mt-[3rem] font-semibold px-[var(--px--mobile)];
+  @apply text-[var(--cor--texto)] mt-[3rem] font-semibold px-[var(--px--mobile)]
+  
+  desktop:w-[50%] desktop:p-0 desktop:flex desktop:flex-col desktop:items-center desktop:justify-center desktop:mx-auto desktop:m-0
+
+  laptop:w-[50%] laptop:p-0 laptop:flex laptop:flex-col laptop:items-center laptop:justify-center laptop:mx-auto laptop:m-0;
 }
 
 .titulo-additional-skills {
-  @apply text-2xl;
+  @apply text-xl;
 }
 
 .container-additional-skills {
-  @apply flex flex-wrap mt-10 gap-5;
+  @apply flex flex-wrap mt-10 gap-5
+  
+  
+  desktop:w-[50%] desktop:items-center 
+
+  
+  laptop:w-[50%] laptop:items-center;
 }
 
 .skill-additional {

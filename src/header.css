@@ -3,7 +3,12 @@
   bg-[#09001d] px-[var(--px--mobile)]
   /* Responsivo */
   
-  desktop:px-[var(--px--desktop)];
+  desktop:px-[var(--px--desktop)] 
+  desktop:items-center
+  
+ tablet-g:w-[100%]
+  
+  laptop:px-[var(--px--laptop)];
 }
 
 .logo-site {
@@ -11,12 +16,18 @@
 }
 
 .menu {
-  @apply flex  w-[100%] items-center justify-end;
+  @apply flex  w-[100%] items-center justify-end
+  
+
+  tablet-g:justify-between
+  laptop:justify-between;
 }
 
 .fa-bars,
 .fa-xmark {
-  @apply transition-transform duration-300 ease-in-out text-[25px];
+  @apply transition-transform duration-300 ease-in-out text-[25px] 
+  
+  tablet-g:hidden laptop:hidden desktop:hidden;
 }
 
 .fa-xmark {
@@ -31,7 +42,16 @@
 }
 
 .container-menu {
-  @apply flex-col  absolute text-right top-[65px]  right-0 bg-[#09001d] w-[100%] gap-2  flex h-0 overflow-hidden;
+  @apply flex-col  absolute text-right top-[65px]  right-0 bg-[#09001d] w-[100%] gap-2  flex h-0 overflow-hidden z-[999]
+  
+  tablet-g:overflow-visible tablet-g:static tablet-g:h-full tablet-g:items-center tablet-g:flex-row tablet-g:w-fit
+
+
+  laptop:overflow-visible laptop:static laptop:h-full laptop:items-center laptop:flex-row laptop:w-fit
+
+
+  
+  desktop:overflow-visible desktop:static desktop:h-full desktop:items-center desktop:flex-row desktop:w-[50%];
 }
 
 @keyframes menuAberto {
@@ -60,15 +80,30 @@
 }
 
 .nome-links-header {
-  @apply text-[1rem] px-[1.3rem] font-light;
+  @apply text-[1rem] px-[1.3rem] font-light whitespace-nowrap;
 }
 
-#ctnMenu li {
+#menu li {
   @apply py-[1rem] border-b border-[#170047] w-[100%];
 }
 
 .icons-header-style {
-  @apply flex w-full border-b border-[#170047] gap-5 justify-end py-[1rem] px-[1.3rem] items-end;
+  @apply flex w-full border-b border-[#170047] gap-5 justify-end py-[1rem] px-[1.3rem] items-end
+  
+  tablet-g:border-none
+tablet-g:w-fit
+tablet-g:m-0 tablet-g:p-0
+
+
+laptop:border-none
+laptop:w-fit
+laptop:m-0 laptop:p-0
+
+
+
+  desktop:border-none
+  desktop:w-fit
+  desktop:m-0 desktop:p-0;
 }
 
 .icons-social {

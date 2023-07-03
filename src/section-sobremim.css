@@ -7,7 +7,9 @@
   @apply absolute top-[150px]
   px-[var(--px--mobile)]
 
-  desktop:px-[var(--px--desktop)];
+  desktop:px-[var(--px--desktop)]
+  
+  laptop:px-[var(--px--laptop)];
 }
 .background {
   background-image: url("/img/backgroundprogramming.jpg");
@@ -17,9 +19,9 @@
 }
 
 .background {
-  @apply relative blur-[5px] brightness-50
+  @apply relative blur-[4px] brightness-[25%]
   
-  cel-g:h-[900px];
+  cel-g:h-[900px] desktop:h-[700px] laptop:h-[700px];
 }
 
 .container-sobremim {
@@ -32,7 +34,10 @@
 
   /* Desktop */
   desktop:flex desktop:items-center desktop:justify-between
-  desktop:px-[var(--px--desktop)];
+  desktop:px-[var(--px--desktop)]
+  
+  
+  laptop:flex laptop:items-center laptop:justify-between;
 }
 
 .container-texto-sobremim {
@@ -40,7 +45,9 @@
   tablet-g:w-[50%]
   
   /* Desktop */
-  desktop:w-[50%];
+  desktop:w-[50%]
+  
+  laptop:w-[50%];
 }
 
 .titulo-sobremim {
@@ -72,12 +79,12 @@
 }
 
 .menu-button-cv {
-  @apply text-left mt-[3rem] whitespace-nowrap w-fit desktop:pl-[10rem]
+  @apply text-left mt-[5rem]  desktop:pl-[var(--px--desktop)]
   
   
   
   /* Desktop */
-  desktop:mt-0;
+  desktop:mt-[3rem];
 }
 
 .link-curriculo {

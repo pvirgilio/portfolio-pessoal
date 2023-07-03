@@ -1,12 +1,16 @@
 .projetos {
-  @apply text-[var(--cor--texto)] mt-[8rem]  
+  @apply text-black mt-[8rem] py-[3rem] 
   
   flex flex-col justify-center items-center mx-auto
-  px-[var(--px--mobile)];
+  px-[var(--px--mobile)]  bg-white
+  
+  desktop:px-[var(--px--desktop)] 
+  
+  laptop:px-[var(--px--laptop)];
 }
 
 .titulo-projetos {
-  @apply text-2xl font-semibold border-b border-[#47d0e6];
+  @apply text-2xl text-black font-semibold border-b border-[#47d0e6];
 }
 
 .container-cards {
@@ -22,19 +26,13 @@
 
 .card {
   @apply flex flex-col
-  w-[300px] h-[450px];
-}
-
-.card {
-  border-width: 2px;
-
-  border-style: solid;
-
-  border-image: linear-gradient(to right, #ad6aff, #47d0e6) 1;
+  w-[300px] h-[450px]
+  
+  bg-gray-200 rounded-[15px];
 }
 
 .titulo-card {
-  @apply text-[18] font-medium;
+  @apply text-[18px] font-semibold;
 }
 
 .container-texto-projetos {
@@ -42,7 +40,7 @@
 }
 
 .texto-card {
-  @apply text-[15px] w-[100%]  text-gray-400 font-normal;
+  @apply text-[15px] w-[100%]  text-black font-normal;
 }
 
 .links-projetos {
@@ -54,19 +52,12 @@ a.link-site {
 
   /* Hover */
   hover:bg-gradient-to-r hover:from-[#01353d] hover:to-[#47d0e6]
-  hover:text-white
+  hover:text-white hover:transition-all
 
 
-  py-[0.5rem] px-[1.5rem] rounded-full text-[13px] font-medium;
-}
-
-.link-site:hover {
-  transition: all 1s;
-}
-.link-github:hover {
-  transition: all 0.3s;
+  py-[0.7rem] px-[1.5rem] rounded-full text-[13px] font-medium text-white;
 }
 
 .link-github {
-  @apply bg-black text-white py-[.7rem] px-[1.5rem] rounded-full text-[13px] hover:bg-white hover:text-black font-medium;
+  @apply bg-black text-white py-[.7rem] px-[1.5rem] rounded-full text-[13px] hover:bg-gray-700 hover:text-white font-medium hover:transition-all;
 }
