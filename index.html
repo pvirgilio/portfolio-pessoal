@@ -13,11 +13,7 @@
     />
     <link rel="stylesheet" href="./dist/output.css" />
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
-    <script src="https://unpkg.com/scrollreveal@4/dist/scrollreveal.min.js"></script>
-
-    <script src="./src/js/menu.js"></script>
-    <script src="./src/js/reveal.js"></script>
-    <script src="./src/js/preload.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
     <title>Portfolio Pedro Virgilio</title>
   </head>
 
@@ -54,11 +50,12 @@
 
       .container-level-html {
         animation: expandir 0.5s ease-in-out;
+        
       }
     </style>
     <div
       id="preloader"
-      class="h-screen flex justify-center items-center bg-gray-300"
+      class="h-screen flex justify-center items-center bg-black"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -70,7 +67,7 @@
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
-        class="lucide lucide-loader-2 animate-spin"
+        class="lucide lucide-loader-2 animate-spin text-white"
       >
         <path d="M21 12a9 9 0 1 1-6.219-8.56" />
       </svg>
@@ -107,23 +104,16 @@
             <i id="btnAbrir" class="fa-solid fa-bars"></i>
           </div>
           <ul id="menu" class="container-menu">
-            <div
-              class="flex gap-5 tablet-g:gap-2 laptop:gap-2 desktop:gap-2 flex-col desktop:flex-row tablet-g:flex-row laptop:flex-row"
-            >
-              <li><a class="nome-links-header" href="./index.html">Home</a></li>
-              <li>
-                <a class="nome-links-header" href="#projetos">Projetos</a>
-              </li>
-              <li>
-                <a class="nome-links-header" href="#about-more">Sobre mim</a>
-              </li>
-            </div>
+            <li><a class="nome-links-header" href="./index.html">Home</a></li>
+            <li><a class="nome-links-header" href="#projetos">Projetos</a></li>
+            <li><a class="nome-links-header" href="#about-more">Sobre mim</a></li>
             <div class="icons-header-style">
               <i class="fa-brands fa-square-instagram icons-social"></i>
               <i class="fa-brands fa-linkedin icons-social"></i>
               <i class="fa-brands fa-square-github icons-social"></i>
             </div>
           </ul>
+        </nav>
         </nav>
       </header>
 
@@ -445,7 +435,7 @@
         <section class="formation">
           <h1 class="titulo-information">Minha formação</h1>
           <object
-            class="absolute desktop:w-[400px] desktop:left-[-300px] hidden desktop:block laptop:block top-0"
+            class="absolute desktop:w-[400px] desktop:left-[-300px] hidden laptop:w-[300px] laptop:left-[-230px] desktop:block laptop:block top-0"
             data="./svg/svgformation.svg"
             type="image/svg+xml"
           ></object>
@@ -562,5 +552,8 @@
         </div>
       </footer>
     </div>
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/reveal.js"></script>
+    <script src="./src/js/preload.js"></script>
   </body>
 </html>

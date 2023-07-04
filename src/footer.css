@@ -1,5 +1,5 @@
 footer {
-  @apply mt-[2.5rem] bg-[#09001d] text-[var(--cor--texto)];
+  @apply bg-[#09001d] text-[var(--cor--texto)];
 }
 
 footer h3 {

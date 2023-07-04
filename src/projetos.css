@@ -2,7 +2,7 @@
   @apply text-black mt-[8rem] py-[3rem] 
   
   flex flex-col justify-center items-center mx-auto
-  px-[var(--px--mobile)]  bg-white
+  px-[var(--px--mobile)]  
   
   desktop:px-[var(--px--desktop)] 
   tablet-g:px-[var(--px--tablet)]
@@ -10,7 +10,7 @@
 }
 
 .titulo-projetos {
-  @apply text-2xl text-black font-semibold border-b border-[#47d0e6];
+  @apply text-2xl text-white font-semibold border-b border-[#47d0e6];
 }
 
 .container-cards {

@@ -1,5 +1,5 @@
 .skills {
-  @apply text-[var(--cor--texto)]  py-[2rem] px-[var(--px--mobile)]
+  @apply text-[var(--cor--texto)]  pt-[2rem] pb-[10rem]  px-[var(--px--mobile)]
   
   /* Desktop */
   desktop:px-[var(--px--desktop)] desktop:mt-[5rem]

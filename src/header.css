@@ -39,7 +39,7 @@
 }
 
 .container-menu {
-  @apply flex-col  absolute text-right top-[65px]  right-0 bg-[#09001d] w-[100%] gap-2  flex h-0 overflow-hidden z-[999]
+  @apply flex-col  absolute text-right top-[65px]  right-0 bg-[#09001d] w-[100%] gap-5 pt-[5]  flex h-0 overflow-hidden z-[999]
   
   tablet-g:overflow-visible tablet-g:static tablet-g:h-full tablet-g:items-center tablet-g:flex-row tablet-g:w-fit
   tablet-g:justify-end
@@ -51,37 +51,23 @@
 
   
   desktop:overflow-visible desktop:static desktop:h-full desktop:items-center desktop:flex-row desktop:w-[50%]
-  desktop:justify-end;
-}
-
-.subcontainer-menu {
-  @apply flex flex-col desktop:flex-row desktop:gap-10 px-[1.3rem];
+  desktop:justify-end
+  desktop:p-0 laptop:p-0
+  desktop:gap-2
+  laptop:gap-2
+  tablet-g:gap-2;
 }
 
 .menu-aberto {
-  @apply flex-col  absolute text-right top-[65px] right-0 bg-[#09001d] w-[100%] gap-2  flex h-fit overflow-hidden z-[999];
+  @apply flex-col  absolute text-right top-[65px] right-0 bg-[#09001d] w-[100%] flex h-fit overflow-hidden z-[999];
 }
 
 .nome-links-header {
   @apply text-[1rem] px-[1.3rem] font-light whitespace-nowrap;
 }
 
-.subcontainer-menu li {
-  @apply py-[1rem] border-b border-[#170047] w-[100%]
-  
-  desktop:border-none desktop:p-0
-  desktop:w-fit
-  laptop:border-none
-
-  tablet-g:border-none;
-}
-
-.subcontainer-menu li a {
-  @apply p-0 w-[100%] hover:text-[#47d0e6] hover:transition-colors;
-}
-
 .icons-header-style {
-  @apply flex w-full border-b border-[#170047] gap-5 justify-end py-[1rem] px-[1.3rem] items-end
+  @apply flex w-full border-b border-[#170047] gap-5 justify-end pb-[1rem] px-[1.3rem] items-end
   
   tablet-g:border-none
 tablet-g:w-fit

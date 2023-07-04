@@ -55,7 +55,10 @@
 }
 
 .span-section-sobremim {
-  @apply bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] bg-clip-text text-transparent text-4xl;
+  @apply bg-gradient-to-r from-[#ad6aff] to-[#47d0e6] bg-clip-text text-transparent desktop:text-[50px]  desktop:leading-[50px] text-[40px]
+  
+  
+  laptop:text-[50px]  laptop:leading-[50px];
 }
 
 .texto-sobremim {

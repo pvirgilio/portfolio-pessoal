@@ -1,9 +1,9 @@
 .formation {
-  @apply text-white flex justify-center flex-col pt-20 px-[var(--px--mobile)]
-  relative
-  
+  @apply text-black flex justify-center flex-col pt-20 px-[var(--px--mobile)]
+  relative bg-white m-0
+  py-5
 items-center 
-w-fit mx-auto
+w-[100%] h-[100%] mx-auto
 
   desktop:px-[var(--px--desktop)]
   
@@ -12,7 +12,7 @@ w-fit mx-auto
 }
 
 .circle-formation {
-  @apply absolute h-3 w-3 rounded-full bg-gradient-to-r from-[#ad6aff] to-[#47d0e6];
+  @apply absolute h-3  w-3 rounded-full bg-gradient-to-r from-[#ad6aff] to-[#47d0e6];
 }
 
 .titulo-information {
@@ -20,7 +20,7 @@ w-fit mx-auto
 }
 
 .container-formation {
-  @apply relative flex py-10 gap-6 m-0;
+  @apply relative py-5 flex gap-6 m-0;
 }
 
 .container-text-container {
@@ -32,7 +32,7 @@ w-fit mx-auto
 }
 
 .subtitulo-formation {
-  @apply text-[#47d0e6] font-semibold text-[15px];
+  @apply text-black font-semibold text-[15px];
 }
 
 .nome-mes-formation {
