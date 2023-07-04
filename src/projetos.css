@@ -5,7 +5,7 @@
   px-[var(--px--mobile)]  bg-white
   
   desktop:px-[var(--px--desktop)] 
-  
+  tablet-g:px-[var(--px--tablet)]
   laptop:px-[var(--px--laptop)];
 }
 

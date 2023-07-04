@@ -4,7 +4,7 @@
   
   
   px-[var(--px--mobile)]
-  
+  cel-g:flex cel-g:flex-col cel-g:items-center cel-g:justify-center
   
    /* Desktop */
   desktop:mt-[5rem] desktop:flex flex-row-reverse desktop:items-center desktop:justify-center desktop:px-[var(--px--desktop)]
@@ -22,28 +22,29 @@
 
 .svg-aboutmore {
   @apply /* Desktop */
-  desktop:w-[50%]
+  desktop:w-[40%]
   
   desktop:scale-x-[-1]
   
   /* Laptop */
-  laptop:w-[50%]
+  laptop:w-[40%]
   
   laptop:scale-x-[-1]
   
   
-  tablet-g:w-[50%]
-  
+  tablet-g:w-[40%]
+  cel-g:w-[60%]
+
   tablet-g:scale-x-[-1];
 }
 
 .container-texto-about {
-  @apply desktop:w-[50%]
+  @apply desktop:w-[40%]
   
   /* laptop: */
-  laptop:w-[50%]
-  
-  tablet-g:w-[50%];
+  laptop:w-[60%]
+  cel-g:w-[70%]
+  tablet-g:w-[60%];
 }
 
 .titulo-about-more {

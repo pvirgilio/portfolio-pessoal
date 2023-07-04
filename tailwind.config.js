@@ -30,15 +30,17 @@ module.exports = {
       },
 
       keyframes: {
-        'menufechado': {
+        menu: {
           '0%': {
-            opacity: 1, height: ' 100px'
+            opacity: 0, height: 0
           },
-          '100%': { opacity: 0, height: 0 },
+          '50%': { opacity: 1, height: '50px' },
+
+          '100%': { opacity: 1, height: '100px' },
         },
       },
       Animation: {
-        menufechado: 'menufechado 0.3s ease-out'
+        menu: 'menu 0.3s ease-in'
 
       },
     }

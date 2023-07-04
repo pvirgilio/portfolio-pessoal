@@ -1,7 +1,10 @@
 .formation {
   @apply text-white flex justify-center flex-col pt-20 px-[var(--px--mobile)]
+  relative
   
-  
+items-center 
+w-fit mx-auto
+
   desktop:px-[var(--px--desktop)]
   
   
@@ -37,5 +40,5 @@
 }
 
 .info-formation {
-  @apply text-[15px] leading-[30px];
+  @apply text-[15px] leading-[30px] w-[300px];
 }
