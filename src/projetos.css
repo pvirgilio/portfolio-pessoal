@@ -21,14 +21,19 @@
 }
 
 .img-card {
-  @apply w-[300px] h-[50%] px-5 py-5 rounded-3xl;
+  @apply w-full h-[50%];
 }
 
 .card {
   @apply flex flex-col
   w-[300px] h-[450px]
   
-  bg-gray-200 rounded-[15px];
+  bg-gray-200
+  shadow-white
+  shadow-md
+  transition-all
+  
+  hover:shadow-white hover:shadow-lg hover:transition-all;
 }
 
 .titulo-card {

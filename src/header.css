@@ -63,7 +63,7 @@
 }
 
 .nome-links-header {
-  @apply text-[1rem] px-[1.3rem] font-light whitespace-nowrap;
+  @apply text-[1rem] px-[1.3rem] font-light whitespace-nowrap transition-all hover:text-[#47d0e6] hover:transition-all;
 }
 
 .icons-header-style {
@@ -86,6 +86,6 @@ laptop:m-0 laptop:p-0
 }
 
 .icons-social {
-  @apply text-[30px] items-center cursor-pointer
+  @apply text-[30px] items-center cursor-pointer transition-all
   hover:text-[#47d0e6] hover:transition-all;
 }
