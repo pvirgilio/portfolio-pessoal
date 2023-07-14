@@ -1,452 +1,554 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./img/perfil.jpg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./dist/output.css" />
+    <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <title>Portfolio Pedro Virgilio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="./img/perfil.jpg" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./dist/output.css" />
-  <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" />
-  <script src="https://unpkg.com/scrollreveal"></script>
-  <title>Portfolio Pedro Virgilio</title>
-</head>
+  <body class="body-style">
+    <style>
+      @keyframes menuAberto {
+        0% {
+          opacity: 0;
+          height: 0;
+        }
 
-<body class="body-style">
-  <style>
-    @keyframes menuAberto {
-      0% {
-        opacity: 0;
-        height: 0;
+        50% {
+          opacity: 1;
+          height: 50px;
+        }
+
+        100% {
+          opacity: 1;
+          height: 100px;
+        }
       }
 
-      50% {
-        opacity: 1;
-        height: 50px;
+      .menu-aberto {
+        animation: menuAberto 0.3s ease-in;
       }
 
-      100% {
-        opacity: 1;
-        height: 100px;
-      }
-    }
+      @keyframes expandir {
+        0% {
+          width: 0;
+        }
 
-    .menu-aberto {
-      animation: menuAberto 0.3s ease-in;
-    }
-
-    @keyframes expandir {
-      0% {
-        width: 0;
+        100% {
+          width: 70%;
+        }
       }
 
-      100% {
-        width: 70%;
+      .container-level-html {
+        animation: expandir 0.5s ease-in-out;
       }
-    }
-
-    .container-level-html {
-      animation: expandir 0.5s ease-in-out;
-
-    }
-  </style>
-  <div id="preloader" class="h-screen flex justify-center items-center bg-black">
-    <svg xmlns="http://www.w3.org/2000/svg" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-      stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-      class="lucide lucide-loader-2 animate-spin text-white">
-      <path d="M21 12a9 9 0 1 1-6.219-8.56" />
-    </svg>
-  </div>
-  <div id="content" class="hidden">
-    <div class="bg-blue-700 fixed mb-5 right-10 desktop:right-20 bottom-0 rounded-full">
-      <a href="#header"><svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 24 24" fill="none"
-          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-          class="lucide lucide-chevron-up text-white">
-          <polyline points="18 15 12 9 6 15" />
-        </svg>
-      </a>
+    </style>
+    <div
+      id="preloader"
+      class="h-screen flex justify-center items-center bg-black"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="45"
+        height="45"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-loader-2 animate-spin text-white"
+      >
+        <path d="M21 12a9 9 0 1 1-6.219-8.56" />
+      </svg>
     </div>
-    <header id="header" class="header-style">
-      <div class="logo-site">
-        <i class="fa-solid fa-code"></i>
-        <span class="font-semibold text-xl">Pedro Virgilio</span>
+    <div id="content" class="hidden">
+      <div
+        class="bg-blue-700 fixed mb-5 right-10 desktop:right-20 bottom-0 rounded-full"
+      >
+        <a href="#header"
+          ><svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="44"
+            height="44"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="lucide lucide-chevron-up text-white"
+          >
+            <polyline points="18 15 12 9 6 15" />
+          </svg>
+        </a>
       </div>
-
-      <nav class="menu">
-        <div class="button-menu justify-between">
-          <i id="btnAbrir" class="fa-solid fa-bars"></i>
+      <header id="header" class="header-style">
+        <div class="logo-site">
+          <i class="fa-solid fa-code"></i>
+          <span class="font-semibold text-xl">Pedro Virgilio</span>
         </div>
-        <ul id="menu" class="container-menu">
-          <li><a class="nome-links-header" href="./index.html">Home</a></li>
-          <li><a class="nome-links-header" href="#projetos">Projetos</a></li>
-          <li><a class="nome-links-header" href="#about-more">Sobre mim</a></li>
-          <div class="icons-header-style">
-            <a href="https://instagram.com/pedrovirgiliodev" target="_blank"><i
-                class="fa-brands fa-square-instagram icons-social"></i></a>
-            <a href="https://www.linkedin.com/in/pedro-virgilio-661227209/" target="_blank"><i
-                class="fa-brands fa-linkedin icons-social"></i></a>
-            <a href="https://github.com/pvirgilio" target="_blank"><i
-                class="fa-brands fa-square-github icons-social"></i></a>
+
+        <nav class="menu">
+          <div class="button-menu justify-between">
+            <i id="btnAbrir" class="fa-solid fa-bars"></i>
           </div>
-        </ul>
-      </nav>
-    </header>
-
-    <main>
-      <section class="section-sobremim">
-        <div class="background"></div>
-        <div class="container-section-sobremim">
-          <div class="container-sobremim">
-            <div class="container-texto-sobremim">
-              <h1 class="titulo-sobremim">
-                <span class="span-section-sobremim">Olá, meu nome é Pedro Virgilio,</span>
-                <br />
-                e sou desenvolvedor front-end.
-              </h1>
-              <p class="texto-sobremim">
-                Sou novato na área de programação, mas possuo fácil
-                aprendizagem, e muita paixão pelo que faço.
-              </p>
-            </div>
-
-            <img class="img-sobremim" src="./img/pedrovirgilio.png" alt="" />
-          </div>
-
-          <div class="menu-button-cv">
-            <span class="relative flex h-3 w-3">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-3 w-5 bg-sky-500"></span>
-            </span>
-            <a class="link-curriculo" href="./Curriculo Pedro Virgilio.pdf">Download CV</a>
-          </div>
-        </div>
-      </section>
-
-      <section id="about-more" class="about-more">
-        <div class="svg-aboutmore">
-          <object data="./svg/Code typing-amico.svg" type="image/svg+xml"></object>
-        </div>
-        <div class="container-texto-about">
-          <h1 class="titulo-about-more">Sobre mim</h1>
-          <p class="texto-about-more">
-            Tenho 21 anos e desde pequeno sempre fui apaixonado por tecnologia
-            e possuo uma aptidão notável para a área. Atualmente, estudo
-            programação e minha principal área é o front-end. Estou à procura
-            de um estágio de programação para poder utilizar meus
-            conhecimentos e SEMPRE ganhar conhecimento juntamente com a
-            experiência na área. Atualmente, estou desempregado, porém sigo
-            estudando para conseguir o meu "SIM" a cada dia.
-          </p>
-        </div>
-      </section>
-
-      <section id="projetos" class="projetos">
-        <h1 class="titulo-projetos">Projetos</h1>
-        <div class="container-cards">
-          <div class="card">
-            <img class="img-card" src="./img/savant-site1.png" alt="" />
-            <div class="container-texto-projetos">
-              <h2 class="titulo-card">Savant Web</h2>
-              <p class="texto-card">
-                Site desenvolvido para minha empresa que está em
-                desenvolvimento. Feito com Html, Css, design responsivo e um
-                pouco de JS.
-              </p>
-              <div class="links-projetos">
-                <a class="link-site" target="_blank" href="https://savantwebdev.netlify.app">View site</a>
-                <a class="link-github" target="_blank" href="https://github.com/pvirgilio/savant-newportoflio.git">View
-                  github</a>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <img class="img-card" src="./img/laravel.jpg" alt="" />
-            <div class="container-texto-projetos">
-              <h2 class="titulo-card">Crud Laravel</h2>
-              <p class="texto-card">
-                Crud simples feito utilizando Php Laravel, Html, Css, Sql,
-                JavaScript.
-              </p>
-              <div class="links-projetos">
-                <a class="link-site" href="#">View site</a>
-                <a class="link-github" target="_blank" href="https://github.com/pvirgilio/controle_de_estoque.git">View
-                  github</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="card">
-            <img class="img-card" src="./img/superofertas.netlify.app_.png" alt="" />
-            <div class="container-texto-projetos">
-              <h2 class="titulo-card">Site para Afiliado Amazon</h2>
-              <p class="texto-card">
-                Feito com Html, Css e Javascript, este site pode ser usado
-                como uma ferramenta para pessoas que são afiliadas da amazon.
-              </p>
-              <div class="links-projetos">
-                <a class="link-site" target="_blank" href="https://superofertas.netlify.app/">View site</a>
-                <a class="link-github" target="_blank" href="https://github.com/pvirgilio/siteLoja.git">View github</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="skills">
-        <h1 class="titulo-skills">Skills</h1>
-        <div class="container-skill-and-add">
-          <div class="container-skills">
-            <div class="skill-html">
-              <div class="container-nome-html">
-                <div class="icon-nome-html">
-                  <i class="fa-brands fa-html5"></i>
-                  <span class="nome-html">Html</span>
-                </div>
-                <span class="span-skill">Intermediário</span>
-              </div>
-              <div class="level-html">
-                <div class="container-level-html"></div>
-              </div>
-            </div>
-
-            <div class="skill-css">
-              <div class="container-nome-css">
-                <div class="icon-nome-css">
-                  <i class="fa-brands fa-css3-alt"></i>
-                  <span>Css</span>
-                </div>
-                <span class="span-skill">Intermediário</span>
-              </div>
-              <div class="level-css">
-                <div class="container-level-css"></div>
-              </div>
-            </div>
-
-            <div class="skill-tailwind">
-              <div class="container-nome-tailwind">
-                <div class="icon-nome-tailwind">
-                  <img src="./svg/tailwind.svg" alt="" />
-                  <span>Tailwind Css</span>
-                </div>
-                <span class="span-skill">Iniciante</span>
-              </div>
-              <div class="level-tailwind">
-                <div class="container-level-tailwind"></div>
-              </div>
-            </div>
-
-            <div class="skill-js">
-              <div class="container-nome-js">
-                <div class="icon-nome-js">
-                  <i class="fa-brands fa-js"></i>
-                  <span>JavaScript</span>
-                </div>
-                <span class="span-skill">Iniciante</span>
-              </div>
-              <div class="level-js">
-                <div class="container-level-js"></div>
-              </div>
-            </div>
-
-            <div class="skill-sql">
-              <div class="container-nome-sql">
-                <div class="icon-nome-sql">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-sql" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2z" />
-                    <path d="M17 8v8h4" />
-                    <path d="M13 15l1 1" />
-                    <path
-                      d="M3 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1" />
-                  </svg>
-                  <span>Sql Server</span>
-                </div>
-                <span class="span-skill">Iniciante</span>
-              </div>
-              <div class="level-sql">
-                <div class="container-level-sql"></div>
-              </div>
-            </div>
-
-            <div class="skill-laravel">
-              <div class="container-nome-laravel">
-                <div class="icon-nome-laravel">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-laravel" width="24"
-                    height="24" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
-                    stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 17l8 5l7 -4v-8l-4 -2.5l4 -2.5l4 2.5v4l-11 6.5l-4 -2.5v-7.5l-4 -2.5z" />
-                    <path d="M11 18v4" />
-                    <path d="M7 15.5l7 -4" />
-                    <path d="M14 7.5v4" />
-                    <path d="M14 11.5l4 2.5" />
-                    <path d="M11 13v-7.5l-4 -2.5l-4 2.5" />
-                    <path d="M7 8l4 -2.5" />
-                    <path d="M18 10l4 -2.5" />
-                  </svg>
-                  <span>Laravel</span>
-                </div>
-                <span class="span-skill">Iniciante</span>
-              </div>
-              <div class="level-laravel">
-                <div class="container-level-laravel"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="additional-skills">
-            <h1 class="titulo-additional-skills">
-              Tecnologia e skills adicionais
-            </h1>
-            <div class="container-additional-skills">
-              <div class="skill-additional">
-                <div class="circle-additional"></div>
-                <span class="span">Fácil Aprendizagem</span>
-              </div>
-              <div class="skill-additional">
-                <div class="circle-additional"></div>
-                <span>Git</span>
-              </div>
-              <div class="skill-additional">
-                <div class="circle-additional"></div>
-                <span>Trabalho em equipe</span>
-              </div>
-              <div class="skill-additional">
-                <div class="circle-additional"></div>
-                <span>Responsável</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="formation">
-        <h1 class="titulo-information">Minha formação</h1>
-        <object
-          class="absolute desktop:w-[400px] desktop:left-[-300px] hidden laptop:w-[300px] laptop:left-[-230px] desktop:block laptop:block top-0"
-          data="./svg/svgformation.svg" type="image/svg+xml"></object>
-        <div class="">
-          <ul>
-            <li class="container-formation">
-              <div class="linha-formation">
-                <div class="circle-formation"></div>
-              </div>
-              <div class="container-text-container">
-                <p class="info-formation">
-                  Estou cursando o sétimo período do curso Bacharelado em
-                  Ciências da Computação (previsão de conclusão para 2024.1).
-                </p>
-                <h2 class="subtitulo-formation">Atualmente</h2>
-
-                <div>
-                  <p class="nome-mes-formation">Julho 2023</p>
-                </div>
-              </div>
+          <ul id="menu" class="container-menu">
+            <li><a class="nome-links-header" href="./index.html">Home</a></li>
+            <li><a class="nome-links-header" href="#projetos">Projetos</a></li>
+            <li>
+              <a class="nome-links-header" href="#about-more">Sobre mim</a>
             </li>
-            <li class="container-formation">
-              <div class="linha-formation">
-                <div class="circle-formation"></div>
-              </div>
-              <div class="container-text-container">
-                <h3 class="nome-empresa-formation">- Danki Code</h3>
-                <p class="info-formation">
-                  Curso Programador Front-End iniciado e finalizado.
-                </p>
-                <h2 class="subtitulo-formation">Front-End</h2>
-                <div>
-                  <p class="nome-mes-formation">Janeiro 2023</p>
-                </div>
-              </div>
-            </li>
-            <li class="container-formation">
-              <div class="linha-formation">
-                <div class="circle-formation"></div>
-              </div>
-              <div class="container-text-container">
-                <h3 class="nome-empresa-formation">- Estácio</h3>
-                <p class="info-formation">
-                  Início do curso de Ciências da Computação.
-                </p>
-
-                <h2 class="subtitulo-formation">Início da Graduação</h2>
-                <div>
-                  <p class="nome-mes-formation">Fevereiro 2020</p>
-                </div>
-              </div>
-            </li>
-            <li class="container-formation">
-              <div class="linha-formation">
-                <div class="circle-formation"></div>
-              </div>
-              <div class="container-text-container">
-                <h3 class="nome-empresa-formation">
-                  - Instituto Educacional São José
-                </h3>
-                <p class="info-formation">Conclusão do ensino médio.</p>
-
-                <h2 class="subtitulo-formation">Formação</h2>
-                <div>
-                  <p class="nome-mes-formation">Novembro 2019</p>
-                </div>
-              </div>
-            </li>
-            <li class="container-formation">
-              <div class="linha-formation">
-                <div class="circle-formation"></div>
-              </div>
-              <div class="container-text-container">
-                <h3 class="nome-empresa-formation">- Senac</h3>
-                <p class="info-formation">
-                  Curso de Lógica de Programação realizado.
-                </p>
-
-                <h2 class="subtitulo-formation">Iniciando na Programação</h2>
-                <div>
-                  <p class="nome-mes-formation">Novembro 2018</p>
-                </div>
-              </div>
-            </li>
+            <div class="icons-header-style">
+              <a href="https://instagram.com/pedrovirgiliodev" target="_blank"
+                ><i class="fa-brands fa-square-instagram icons-social"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/pedro-virgilio-661227209/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin icons-social"></i
+              ></a>
+              <a href="https://github.com/pvirgilio" target="_blank"
+                ><i class="fa-brands fa-square-github icons-social"></i
+              ></a>
+            </div>
           </ul>
-        </div>
-      </section>
-    </main>
+        </nav>
+      </header>
 
-    <footer>
-      <div class="main-footer">
-        <div class="contact-me">
-          <div class="icons-footer-style">
-            <h3>Contact Me</h3>
-            <div class="flex gap-5 mt-10">
-              <a href="https://instagram.com/pedrovirgiliodev" target="_blank"><i
-                  class="fa-brands fa-square-instagram icons-social"></i></a>
-              <a href="https://www.linkedin.com/in/pedro-virgilio-661227209/" target="_blank"><i
-                  class="fa-brands fa-linkedin icons-social"></i></a>
-              <a href="https://github.com/pvirgilio" target="_blank"><i
-                  class="fa-brands fa-square-github icons-social"></i></a>
+      <main>
+        <section class="section-sobremim">
+          <div class="background"></div>
+          <div class="container-section-sobremim">
+            <div class="container-sobremim">
+              <div class="container-texto-sobremim">
+                <h1 class="titulo-sobremim">
+                  <span class="span-section-sobremim"
+                    >Olá, meu nome é Pedro Virgilio,</span
+                  >
+                  <br />
+                  e sou desenvolvedor front-end.
+                </h1>
+                <p class="texto-sobremim">
+                  Sou novato na área de programação, mas possuo fácil
+                  aprendizagem, e muita paixão pelo que faço.
+                </p>
+              </div>
+
+              <img class="img-sobremim" src="./img/pedrovirgilio.png" alt="" />
+            </div>
+
+            <div class="menu-button-cv">
+              <span class="relative flex h-3 w-3">
+                <span
+                  class="animate-ping absolute inline-flex h-full w-full rounded-full bg-sky-400 opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex rounded-full h-3 w-5 bg-sky-500"
+                ></span>
+              </span>
+              <a class="link-curriculo" href="./Curriculo Pedro Virgilio.pdf"
+                >Download CV</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <section id="about-more" class="about-more">
+          <div class="svg-aboutmore">
+            <object
+              data="./svg/Code typing-amico.svg"
+              type="image/svg+xml"
+            ></object>
+          </div>
+          <div class="container-texto-about">
+            <h1 class="titulo-about-more">Sobre mim</h1>
+            <p class="texto-about-more">
+              Tenho 21 anos e desde pequeno sempre fui apaixonado por tecnologia
+              e possuo uma aptidão notável para a área. Atualmente, estudo
+              programação e minha principal área é o front-end. Estou à procura
+              de um estágio de programação para poder utilizar meus
+              conhecimentos e SEMPRE ganhar conhecimento juntamente com a
+              experiência na área. Atualmente, sou estagiário/auxiliar
+              administrativo, porém não é a área que quero seguir. Portanto sigo
+              estudando para conseguir o meu "SIM" do mercado de programação a
+              cada dia.
+            </p>
+          </div>
+        </section>
+
+        <section id="projetos" class="projetos">
+          <h1 class="titulo-projetos">Projetos</h1>
+          <div class="container-cards">
+            <div class="card">
+              <img class="img-card" src="./img/savant-site1.png" alt="" />
+              <div class="container-texto-projetos">
+                <h2 class="titulo-card">Savant Web</h2>
+                <p class="texto-card">
+                  Site desenvolvido para minha empresa que está em
+                  desenvolvimento. Feito com Html, Css, design responsivo e um
+                  pouco de JS.
+                </p>
+                <div class="links-projetos">
+                  <a
+                    class="link-site"
+                    target="_blank"
+                    href="https://savantwebdev.netlify.app"
+                    >View site</a
+                  >
+                  <a
+                    class="link-github"
+                    target="_blank"
+                    href="https://github.com/pvirgilio/savant-newportoflio.git"
+                    >View github</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <img class="img-card" src="./img/laravel.jpg" alt="" />
+              <div class="container-texto-projetos">
+                <h2 class="titulo-card">Crud Laravel</h2>
+                <p class="texto-card">
+                  Crud simples feito utilizando Php Laravel, Html, Css, Sql,
+                  JavaScript.
+                </p>
+                <div class="links-projetos">
+                  <a class="link-site" href="#">View site</a>
+                  <a
+                    class="link-github"
+                    target="_blank"
+                    href="https://github.com/pvirgilio/controle_de_estoque.git"
+                    >View github</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                class="img-card"
+                src="./img/superofertas.netlify.app_.png"
+                alt=""
+              />
+              <div class="container-texto-projetos">
+                <h2 class="titulo-card">Site para Afiliado Amazon</h2>
+                <p class="texto-card">
+                  Feito com Html, Css e Javascript, este site pode ser usado
+                  como uma ferramenta para pessoas que são afiliadas da amazon.
+                </p>
+                <div class="links-projetos">
+                  <a
+                    class="link-site"
+                    target="_blank"
+                    href="https://superofertas.netlify.app/"
+                    >View site</a
+                  >
+                  <a
+                    class="link-github"
+                    target="_blank"
+                    href="https://github.com/pvirgilio/siteLoja.git"
+                    >View github</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="skills">
+          <h1 class="titulo-skills">Skills</h1>
+          <div class="container-skill-and-add">
+            <div class="container-skills">
+              <div class="skill-html">
+                <div class="container-nome-html">
+                  <div class="icon-nome-html">
+                    <i class="fa-brands fa-html5"></i>
+                    <span class="nome-html">Html</span>
+                  </div>
+                  <span class="span-skill">Intermediário</span>
+                </div>
+                <div class="level-html">
+                  <div class="container-level-html"></div>
+                </div>
+              </div>
+
+              <div class="skill-css">
+                <div class="container-nome-css">
+                  <div class="icon-nome-css">
+                    <i class="fa-brands fa-css3-alt"></i>
+                    <span>Css</span>
+                  </div>
+                  <span class="span-skill">Intermediário</span>
+                </div>
+                <div class="level-css">
+                  <div class="container-level-css"></div>
+                </div>
+              </div>
+
+              <div class="skill-tailwind">
+                <div class="container-nome-tailwind">
+                  <div class="icon-nome-tailwind">
+                    <img src="./svg/tailwind.svg" alt="" />
+                    <span>Tailwind Css</span>
+                  </div>
+                  <span class="span-skill">Iniciante</span>
+                </div>
+                <div class="level-tailwind">
+                  <div class="container-level-tailwind"></div>
+                </div>
+              </div>
+
+              <div class="skill-js">
+                <div class="container-nome-js">
+                  <div class="icon-nome-js">
+                    <i class="fa-brands fa-js"></i>
+                    <span>JavaScript</span>
+                  </div>
+                  <span class="span-skill">Iniciante</span>
+                </div>
+                <div class="level-js">
+                  <div class="container-level-js"></div>
+                </div>
+              </div>
+
+              <div class="skill-sql">
+                <div class="container-nome-sql">
+                  <div class="icon-nome-sql">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-sql"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#ffffff"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M12 8a2 2 0 0 1 2 2v4a2 2 0 1 1 -4 0v-4a2 2 0 0 1 2 -2z"
+                      />
+                      <path d="M17 8v8h4" />
+                      <path d="M13 15l1 1" />
+                      <path
+                        d="M3 15a1 1 0 0 0 1 1h2a1 1 0 0 0 1 -1v-2a1 1 0 0 0 -1 -1h-2a1 1 0 0 1 -1 -1v-2a1 1 0 0 1 1 -1h2a1 1 0 0 1 1 1"
+                      />
+                    </svg>
+                    <span>Sql Server</span>
+                  </div>
+                  <span class="span-skill">Iniciante</span>
+                </div>
+                <div class="level-sql">
+                  <div class="container-level-sql"></div>
+                </div>
+              </div>
+
+              <div class="skill-laravel">
+                <div class="container-nome-laravel">
+                  <div class="icon-nome-laravel">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="icon icon-tabler icon-tabler-brand-laravel"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="#ffffff"
+                      fill="none"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path
+                        d="M3 17l8 5l7 -4v-8l-4 -2.5l4 -2.5l4 2.5v4l-11 6.5l-4 -2.5v-7.5l-4 -2.5z"
+                      />
+                      <path d="M11 18v4" />
+                      <path d="M7 15.5l7 -4" />
+                      <path d="M14 7.5v4" />
+                      <path d="M14 11.5l4 2.5" />
+                      <path d="M11 13v-7.5l-4 -2.5l-4 2.5" />
+                      <path d="M7 8l4 -2.5" />
+                      <path d="M18 10l4 -2.5" />
+                    </svg>
+                    <span>Laravel</span>
+                  </div>
+                  <span class="span-skill">Iniciante</span>
+                </div>
+                <div class="level-laravel">
+                  <div class="container-level-laravel"></div>
+                </div>
+              </div>
+            </div>
+
+            <div class="additional-skills">
+              <h1 class="titulo-additional-skills">
+                Tecnologia e skills adicionais
+              </h1>
+              <div class="container-additional-skills">
+                <div class="skill-additional">
+                  <div class="circle-additional"></div>
+                  <span class="span">Fácil Aprendizagem</span>
+                </div>
+                <div class="skill-additional">
+                  <div class="circle-additional"></div>
+                  <span>Git</span>
+                </div>
+                <div class="skill-additional">
+                  <div class="circle-additional"></div>
+                  <span>Trabalho em equipe</span>
+                </div>
+                <div class="skill-additional">
+                  <div class="circle-additional"></div>
+                  <span>Responsável</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="formation">
+          <h1 class="titulo-information">Minha formação</h1>
+          <object
+            class="absolute desktop:w-[400px] desktop:left-[-300px] hidden laptop:w-[300px] laptop:left-[-230px] desktop:block laptop:block top-0"
+            data="./svg/svgformation.svg"
+            type="image/svg+xml"
+          ></object>
+          <div class="">
+            <ul>
+              <li class="container-formation">
+                <div class="linha-formation">
+                  <div class="circle-formation"></div>
+                </div>
+                <div class="container-text-container">
+                  <p class="info-formation">
+                    Estou cursando o sétimo período do curso Bacharelado em
+                    Ciências da Computação (previsão de conclusão para 2024.1).
+                  </p>
+                  <h2 class="subtitulo-formation">Atualmente</h2>
+
+                  <div>
+                    <p class="nome-mes-formation">Julho 2023</p>
+                  </div>
+                </div>
+              </li>
+              <li class="container-formation">
+                <div class="linha-formation">
+                  <div class="circle-formation"></div>
+                </div>
+                <div class="container-text-container">
+                  <h3 class="nome-empresa-formation">- Danki Code</h3>
+                  <p class="info-formation">
+                    Curso Programador Front-End iniciado e finalizado.
+                  </p>
+                  <h2 class="subtitulo-formation">Front-End</h2>
+                  <div>
+                    <p class="nome-mes-formation">Janeiro 2023</p>
+                  </div>
+                </div>
+              </li>
+              <li class="container-formation">
+                <div class="linha-formation">
+                  <div class="circle-formation"></div>
+                </div>
+                <div class="container-text-container">
+                  <h3 class="nome-empresa-formation">- Estácio</h3>
+                  <p class="info-formation">
+                    Início do curso de Ciências da Computação.
+                  </p>
+
+                  <h2 class="subtitulo-formation">Início da Graduação</h2>
+                  <div>
+                    <p class="nome-mes-formation">Fevereiro 2020</p>
+                  </div>
+                </div>
+              </li>
+              <li class="container-formation">
+                <div class="linha-formation">
+                  <div class="circle-formation"></div>
+                </div>
+                <div class="container-text-container">
+                  <h3 class="nome-empresa-formation">
+                    - Instituto Educacional São José
+                  </h3>
+                  <p class="info-formation">Conclusão do ensino médio.</p>
+
+                  <h2 class="subtitulo-formation">Formação</h2>
+                  <div>
+                    <p class="nome-mes-formation">Novembro 2019</p>
+                  </div>
+                </div>
+              </li>
+              <li class="container-formation">
+                <div class="linha-formation">
+                  <div class="circle-formation"></div>
+                </div>
+                <div class="container-text-container">
+                  <h3 class="nome-empresa-formation">- Senac</h3>
+                  <p class="info-formation">
+                    Curso de Lógica de Programação realizado.
+                  </p>
+
+                  <h2 class="subtitulo-formation">Iniciando na Programação</h2>
+                  <div>
+                    <p class="nome-mes-formation">Novembro 2018</p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="main-footer">
+          <div class="contact-me">
+            <div class="icons-footer-style">
+              <h3>Contact Me</h3>
+              <div class="flex gap-5 mt-10">
+                <a href="https://instagram.com/pedrovirgiliodev" target="_blank"
+                  ><i class="fa-brands fa-square-instagram icons-social"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/pedro-virgilio-661227209/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin icons-social"></i
+                ></a>
+                <a href="https://github.com/pvirgilio" target="_blank"
+                  ><i class="fa-brands fa-square-github icons-social"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="email-footer">
+              <h3>Email</h3>
+              <a class="text-[12px] mt-10">pedrovirgilio@outlook.com.br</a>
             </div>
           </div>
 
-          <div class="email-footer">
-            <h3>Email</h3>
-            <a class="text-[12px] mt-10">pedrovirgilio@outlook.com.br</a>
+          <div class="copyright">
+            <p>
+              &copy;Copyright All directs Reserved |
+              <span class="font-bold">Pedro Virgilio 2023</span>
+            </p>
           </div>
         </div>
-
-        <div class="copyright">
-          <p>
-            &copy;Copyright All directs Reserved |
-            <span class="font-bold">Pedro Virgilio 2023</span>
-          </p>
-        </div>
-      </div>
-    </footer>
-  </div>
-  <script src="./src/js/menu.js"></script>
-  <script src="./src/js/preload.js"></script>
-</body>
-
+      </footer>
+    </div>
+    <script src="./src/js/menu.js"></script>
+    <script src="./src/js/preload.js"></script>
+  </body>
 </html>
